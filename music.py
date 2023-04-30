@@ -10,8 +10,8 @@ class MusicUtil:
     def __play_music__(self):
         song = AudioSegment.from_mp3(self.music_path)
         
-        # Minus 12 dB
-        song = song - 12
+        # Minus 6 dB
+        song = song - 6
         
         play(song)
 
